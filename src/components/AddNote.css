@@ -1,0 +1,42 @@
+.add-new-note{
+    background-color: rgb(0, 127, 255);
+}
+
+.inline-add-note{
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    color: rgb(255,255,255);
+    background-color: transparent;
+    border: none;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+textarea::placeholder{
+    color: rgb(255,255,255);
+}
+
+.button-save{
+    font-family: 'Oswald', sans-serif;
+    border: 2px solid rgb(255,255,255);
+    background-color: rgb(255,255,255);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 2px 20px;
+    cursor: pointer;
+}
+
+.button-save:hover{
+    transition: 0.4s;
+    background-color: transparent;
+    color: rgb(255,255,255);
+}
