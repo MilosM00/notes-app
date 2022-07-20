@@ -1,7 +1,7 @@
 import React from "react";
 import "./Note.css";
 
-const Note = ({id, text, date}) =>{
+const Note = ({id, text, date, deleteNoteEvent}) =>{
     return(
 
         <div className="note">
@@ -10,7 +10,7 @@ const Note = ({id, text, date}) =>{
 
             <div className="inline-note">
                 <p>{date}</p>
-                <p className="trash"><i className="fa fa-trash"></i></p>
+                <p className="trash" onClick={() => deleteNoteEvent(id)}><i className="fa fa-trash"></i></p>
             </div>
 
         </div>
